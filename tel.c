@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 struct tel{
 	char name[30];
@@ -35,6 +36,7 @@ void search_tel(){
 	}
 	printf("찾는이가 없습니다.\n");
 }
+//전화번호 삭제
 void delete_tel(){
 	char name[30];
 	printf("검색할 이름을 입력하세요 : ");
@@ -54,6 +56,7 @@ void delete_tel(){
 	}
 	printf("삭제할 데이터가 없습니다.\n")
 }
+//전화번호 수정
 void update_tel(){
 	char name[30];
 	char name2[30];
@@ -82,5 +85,11 @@ int main(void){
 	insert_tel();
 	insert_tel();
 	insert_tel();
+	insert_tel();
+	insert_tel();
+
+	search_tel();
+	delete_tel();
+	update_tel();
 	return 0;
 }
