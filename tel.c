@@ -4,9 +4,10 @@ struct tel{
 	char name[30];
 	int tel;
 }
+
 struct tel arr[10];
 int tindex = 0;
-
+//전화번호 추가
 void insert_tel(){
 	if(tindex>=10){
 		printf("전화번호부가 꽉찼습니다.\n");
@@ -18,7 +19,7 @@ void insert_tel(){
 	scanf("%d",arr[tindex].tel);
 	tindex++;
 }
-
+//전화번호 찾기
 void search_tel(){
 	char name[30];
 	printf("검색할 이름을 입력하세요 : ");
